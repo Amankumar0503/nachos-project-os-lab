@@ -826,14 +826,7 @@ interrupt.o: ../machine/interrupt.cc /usr/include/stdc-predef.h \
  ../machine/callback.h ../threads/main.h ../threads/kernel.h \
  ../threads/thread.h ../machine/machine.h ../machine/translate.h \
  ../userprog/addrspace.h ../filesys/filesys.h ../filesys/openfile.h \
- ../filesys/filetable.h ../threads/scheduler.h /usr/include/c++/12/queue \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/stats.h \
+ ../filesys/filetable.h ../threads/scheduler.h ../machine/stats.h \
  ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
  ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
  ../threads/pcb.h
@@ -1143,17 +1136,9 @@ timer.o: ../machine/timer.cc /usr/include/stdc-predef.h \
  ../threads/thread.h ../machine/machine.h ../machine/translate.h \
  ../userprog/addrspace.h ../filesys/filesys.h ../filesys/openfile.h \
  ../filesys/filetable.h ../threads/scheduler.h ../lib/list.h \
- ../lib/list.cc /usr/include/c++/12/queue /usr/include/c++/12/deque \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/stats.h ../threads/alarm.h ../lib/bitmap.h \
- ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
- ../threads/pcb.h
+ ../lib/list.cc ../machine/interrupt.h ../machine/stats.h \
+ ../threads/alarm.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
+ ../threads/ptable.h ../threads/pcb.h
 console.o: ../machine/console.cc /usr/include/stdc-predef.h \
  ../lib/copyright.h ../machine/console.h ../lib/utility.h \
  ../machine/callback.h ../threads/main.h ../lib/debug.h ../lib/sysdep.h \
@@ -1309,15 +1294,8 @@ console.o: ../machine/console.cc /usr/include/stdc-predef.h \
  ../threads/thread.h ../machine/machine.h ../machine/translate.h \
  ../userprog/addrspace.h ../filesys/filesys.h ../filesys/openfile.h \
  ../filesys/filetable.h ../threads/scheduler.h ../lib/list.h \
- ../lib/list.cc /usr/include/c++/12/queue /usr/include/c++/12/deque \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../lib/list.cc ../machine/interrupt.h ../machine/stats.h \
+ ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
  ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
  ../threads/pcb.h
 machine.o: ../machine/machine.cc /usr/include/stdc-predef.h \
@@ -1474,14 +1452,7 @@ machine.o: ../machine/machine.cc /usr/include/stdc-predef.h \
  /usr/include/string.h /usr/include/strings.h ../threads/kernel.h \
  ../threads/thread.h ../userprog/addrspace.h ../filesys/filesys.h \
  ../filesys/openfile.h ../filesys/filetable.h ../threads/scheduler.h \
- ../lib/list.h ../lib/list.cc /usr/include/c++/12/queue \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
+ ../lib/list.h ../lib/list.cc ../machine/interrupt.h \
  ../machine/callback.h ../machine/stats.h ../threads/alarm.h \
  ../machine/timer.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
  ../threads/ptable.h ../threads/pcb.h
@@ -1640,17 +1611,10 @@ mipssim.o: ../machine/mipssim.cc /usr/include/stdc-predef.h \
  ../threads/kernel.h ../threads/thread.h ../userprog/addrspace.h \
  ../filesys/filesys.h ../filesys/openfile.h ../filesys/filetable.h \
  ../threads/scheduler.h ../lib/list.h ../lib/list.cc \
- /usr/include/c++/12/queue /usr/include/c++/12/deque \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/callback.h ../machine/stats.h ../threads/alarm.h \
- ../machine/timer.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
- ../threads/ptable.h ../threads/pcb.h
+ ../machine/interrupt.h ../machine/callback.h ../machine/stats.h \
+ ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
+ ../threads/pcb.h
 translate.o: ../machine/translate.cc /usr/include/stdc-predef.h \
  ../lib/copyright.h ../threads/main.h ../lib/debug.h ../lib/utility.h \
  ../lib/sysdep.h /usr/include/c++/12/iostream \
@@ -1805,17 +1769,10 @@ translate.o: ../machine/translate.cc /usr/include/stdc-predef.h \
  ../threads/thread.h ../machine/machine.h ../machine/translate.h \
  ../userprog/addrspace.h ../filesys/filesys.h ../filesys/openfile.h \
  ../filesys/filetable.h ../threads/scheduler.h ../lib/list.h \
- ../lib/list.cc /usr/include/c++/12/queue /usr/include/c++/12/deque \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/callback.h ../machine/stats.h ../threads/alarm.h \
- ../machine/timer.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
- ../threads/ptable.h ../threads/pcb.h
+ ../lib/list.cc ../machine/interrupt.h ../machine/callback.h \
+ ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
+ ../threads/pcb.h
 network.o: ../machine/network.cc /usr/include/stdc-predef.h \
  ../lib/copyright.h ../machine/network.h ../lib/utility.h \
  ../machine/callback.h ../threads/main.h ../lib/debug.h ../lib/sysdep.h \
@@ -1971,15 +1928,8 @@ network.o: ../machine/network.cc /usr/include/stdc-predef.h \
  ../threads/thread.h ../machine/machine.h ../machine/translate.h \
  ../userprog/addrspace.h ../filesys/filesys.h ../filesys/openfile.h \
  ../filesys/filetable.h ../threads/scheduler.h ../lib/list.h \
- ../lib/list.cc /usr/include/c++/12/queue /usr/include/c++/12/deque \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../lib/list.cc ../machine/interrupt.h ../machine/stats.h \
+ ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
  ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
  ../threads/pcb.h
 disk.o: ../machine/disk.cc /usr/include/stdc-predef.h ../lib/copyright.h \
@@ -2136,15 +2086,8 @@ disk.o: ../machine/disk.cc /usr/include/stdc-predef.h ../lib/copyright.h \
  ../threads/kernel.h ../threads/thread.h ../machine/machine.h \
  ../machine/translate.h ../userprog/addrspace.h ../filesys/filesys.h \
  ../filesys/openfile.h ../filesys/filetable.h ../threads/scheduler.h \
- ../lib/list.h ../lib/list.cc /usr/include/c++/12/queue \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../lib/list.h ../lib/list.cc ../machine/interrupt.h ../machine/stats.h \
+ ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
  ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
  ../threads/pcb.h
 alarm.o: ../threads/alarm.cc /usr/include/stdc-predef.h \
@@ -2302,16 +2245,9 @@ alarm.o: ../threads/alarm.cc /usr/include/stdc-predef.h \
  ../threads/thread.h ../machine/machine.h ../machine/translate.h \
  ../userprog/addrspace.h ../filesys/filesys.h ../filesys/openfile.h \
  ../filesys/filetable.h ../threads/scheduler.h ../lib/list.h \
- ../lib/list.cc /usr/include/c++/12/queue /usr/include/c++/12/deque \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/stats.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
- ../threads/ptable.h ../threads/pcb.h
+ ../lib/list.cc ../machine/interrupt.h ../machine/stats.h ../lib/bitmap.h \
+ ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
+ ../threads/pcb.h
 kernel.o: ../threads/kernel.cc /usr/include/stdc-predef.h \
  ../lib/copyright.h ../lib/debug.h ../lib/utility.h ../lib/sysdep.h \
  /usr/include/c++/12/iostream \
@@ -2466,14 +2402,7 @@ kernel.o: ../threads/kernel.cc /usr/include/stdc-predef.h \
  ../threads/kernel.h ../threads/thread.h ../machine/machine.h \
  ../machine/translate.h ../userprog/addrspace.h ../filesys/filesys.h \
  ../filesys/openfile.h ../filesys/filetable.h ../threads/scheduler.h \
- ../lib/list.h ../lib/list.cc /usr/include/c++/12/queue \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
+ ../lib/list.h ../lib/list.cc ../machine/interrupt.h \
  ../machine/callback.h ../machine/stats.h ../threads/alarm.h \
  ../machine/timer.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
  ../threads/ptable.h ../threads/pcb.h ../threads/synch.h \
@@ -2634,17 +2563,10 @@ main.o: ../threads/main.cc /usr/include/stdc-predef.h ../lib/copyright.h \
  ../threads/thread.h ../machine/machine.h ../machine/translate.h \
  ../userprog/addrspace.h ../filesys/filesys.h ../filesys/openfile.h \
  ../filesys/filetable.h ../threads/scheduler.h ../lib/list.h \
- ../lib/list.cc /usr/include/c++/12/queue /usr/include/c++/12/deque \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/callback.h ../machine/stats.h ../threads/alarm.h \
- ../machine/timer.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
- ../threads/ptable.h ../threads/pcb.h
+ ../lib/list.cc ../machine/interrupt.h ../machine/callback.h \
+ ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
+ ../threads/pcb.h
 scheduler.o: ../threads/scheduler.cc /usr/include/stdc-predef.h \
  ../lib/copyright.h ../lib/debug.h ../lib/utility.h ../lib/sysdep.h \
  /usr/include/c++/12/iostream \
@@ -2798,14 +2720,7 @@ scheduler.o: ../threads/scheduler.cc /usr/include/stdc-predef.h \
  /usr/include/string.h /usr/include/strings.h ../threads/scheduler.h \
  ../lib/list.h ../lib/list.cc ../threads/thread.h ../machine/machine.h \
  ../machine/translate.h ../userprog/addrspace.h ../filesys/filesys.h \
- ../filesys/openfile.h ../filesys/filetable.h /usr/include/c++/12/queue \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../threads/main.h \
+ ../filesys/openfile.h ../filesys/filetable.h ../threads/main.h \
  ../threads/kernel.h ../machine/interrupt.h ../machine/callback.h \
  ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
  ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
@@ -2964,17 +2879,10 @@ synch.o: ../threads/synch.cc /usr/include/stdc-predef.h \
  ../machine/translate.h ../userprog/addrspace.h ../filesys/filesys.h \
  ../filesys/openfile.h ../filesys/filetable.h ../lib/list.h \
  ../lib/debug.h ../lib/list.cc ../threads/main.h ../threads/kernel.h \
- ../threads/scheduler.h /usr/include/c++/12/queue \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/callback.h ../machine/stats.h ../threads/alarm.h \
- ../machine/timer.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
- ../threads/ptable.h ../threads/pcb.h
+ ../threads/scheduler.h ../machine/interrupt.h ../machine/callback.h \
+ ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
+ ../threads/pcb.h
 synchlist.o: ../threads/synchlist.cc /usr/include/stdc-predef.h \
  ../lib/copyright.h ../threads/synchlist.h ../lib/list.h ../lib/debug.h \
  ../lib/utility.h ../lib/sysdep.h /usr/include/c++/12/iostream \
@@ -3129,14 +3037,7 @@ synchlist.o: ../threads/synchlist.cc /usr/include/stdc-predef.h \
  ../threads/synch.h ../threads/thread.h ../machine/machine.h \
  ../machine/translate.h ../userprog/addrspace.h ../filesys/filesys.h \
  ../filesys/openfile.h ../filesys/filetable.h ../threads/main.h \
- ../threads/kernel.h ../threads/scheduler.h /usr/include/c++/12/queue \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
+ ../threads/kernel.h ../threads/scheduler.h ../machine/interrupt.h \
  ../machine/callback.h ../machine/stats.h ../threads/alarm.h \
  ../machine/timer.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
  ../threads/ptable.h ../threads/pcb.h ../threads/synchlist.cc
@@ -3295,17 +3196,10 @@ thread.o: ../threads/thread.cc /usr/include/stdc-predef.h \
  ../filesys/openfile.h ../filesys/filetable.h ../threads/switch.h \
  ../threads/synch.h ../lib/list.h ../lib/debug.h ../lib/list.cc \
  ../threads/main.h ../threads/kernel.h ../threads/scheduler.h \
- /usr/include/c++/12/queue /usr/include/c++/12/deque \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/callback.h ../machine/stats.h ../threads/alarm.h \
- ../machine/timer.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
- ../threads/ptable.h ../threads/pcb.h
+ ../machine/interrupt.h ../machine/callback.h ../machine/stats.h \
+ ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
+ ../threads/pcb.h
 ptable.o: ../threads/ptable.cc /usr/include/stdc-predef.h \
  ../threads/synch.h ../lib/copyright.h ../threads/thread.h \
  ../lib/utility.h ../lib/sysdep.h /usr/include/c++/12/iostream \
@@ -3460,17 +3354,10 @@ ptable.o: ../threads/ptable.cc /usr/include/stdc-predef.h \
  ../machine/translate.h ../userprog/addrspace.h ../filesys/filesys.h \
  ../filesys/openfile.h ../filesys/filetable.h ../lib/list.h \
  ../lib/debug.h ../lib/list.cc ../threads/main.h ../threads/kernel.h \
- ../threads/scheduler.h /usr/include/c++/12/queue \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/callback.h ../machine/stats.h ../threads/alarm.h \
- ../machine/timer.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
- ../threads/ptable.h ../threads/pcb.h
+ ../threads/scheduler.h ../machine/interrupt.h ../machine/callback.h \
+ ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
+ ../threads/pcb.h
 pcb.o: ../threads/pcb.cc /usr/include/stdc-predef.h ../threads/synch.h \
  ../lib/copyright.h ../threads/thread.h ../lib/utility.h ../lib/sysdep.h \
  /usr/include/c++/12/iostream \
@@ -3625,17 +3512,10 @@ pcb.o: ../threads/pcb.cc /usr/include/stdc-predef.h ../threads/synch.h \
  ../machine/translate.h ../userprog/addrspace.h ../filesys/filesys.h \
  ../filesys/openfile.h ../filesys/filetable.h ../lib/list.h \
  ../lib/debug.h ../lib/list.cc ../threads/main.h ../threads/kernel.h \
- ../threads/scheduler.h /usr/include/c++/12/queue \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/callback.h ../machine/stats.h ../threads/alarm.h \
- ../machine/timer.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
- ../threads/ptable.h ../threads/pcb.h
+ ../threads/scheduler.h ../machine/interrupt.h ../machine/callback.h \
+ ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
+ ../threads/pcb.h
 stable.o: ../threads/stable.cc /usr/include/stdc-predef.h \
  ../threads/synch.h ../lib/copyright.h ../threads/thread.h \
  ../lib/utility.h ../lib/sysdep.h /usr/include/c++/12/iostream \
@@ -3790,17 +3670,10 @@ stable.o: ../threads/stable.cc /usr/include/stdc-predef.h \
  ../machine/translate.h ../userprog/addrspace.h ../filesys/filesys.h \
  ../filesys/openfile.h ../filesys/filetable.h ../lib/list.h \
  ../lib/debug.h ../lib/list.cc ../threads/main.h ../threads/kernel.h \
- ../threads/scheduler.h /usr/include/c++/12/queue \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/callback.h ../machine/stats.h ../threads/alarm.h \
- ../machine/timer.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
- ../threads/ptable.h ../threads/pcb.h
+ ../threads/scheduler.h ../machine/interrupt.h ../machine/callback.h \
+ ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
+ ../threads/pcb.h
 sem.o: ../threads/sem.cc /usr/include/stdc-predef.h ../threads/sem.h \
  ../threads/synch.h ../lib/copyright.h ../threads/thread.h \
  ../lib/utility.h ../lib/sysdep.h /usr/include/c++/12/iostream \
@@ -3955,17 +3828,9 @@ sem.o: ../threads/sem.cc /usr/include/stdc-predef.h ../threads/sem.h \
  ../machine/translate.h ../userprog/addrspace.h ../filesys/filesys.h \
  ../filesys/openfile.h ../filesys/filetable.h ../lib/list.h \
  ../lib/debug.h ../lib/list.cc ../threads/main.h ../threads/kernel.h \
- ../threads/scheduler.h /usr/include/c++/12/queue \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/callback.h ../machine/stats.h ../threads/alarm.h \
- ../machine/timer.h ../lib/bitmap.h ../threads/stable.h \
- ../threads/ptable.h ../threads/pcb.h
+ ../threads/scheduler.h ../machine/interrupt.h ../machine/callback.h \
+ ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../threads/stable.h ../threads/ptable.h ../threads/pcb.h
 addrspace.o: ../userprog/addrspace.cc /usr/include/stdc-predef.h \
  ../lib/copyright.h ../threads/main.h ../lib/debug.h ../lib/utility.h \
  ../lib/sysdep.h /usr/include/c++/12/iostream \
@@ -4120,18 +3985,10 @@ addrspace.o: ../userprog/addrspace.cc /usr/include/stdc-predef.h \
  ../threads/thread.h ../machine/machine.h ../machine/translate.h \
  ../userprog/addrspace.h ../filesys/filesys.h ../filesys/openfile.h \
  ../filesys/filetable.h ../threads/scheduler.h ../lib/list.h \
- ../lib/list.cc /usr/include/c++/12/queue /usr/include/c++/12/deque \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/callback.h ../machine/stats.h ../threads/alarm.h \
- ../machine/timer.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
- ../threads/ptable.h ../threads/pcb.h ../userprog/noff.h \
- ../threads/synch.h
+ ../lib/list.cc ../machine/interrupt.h ../machine/callback.h \
+ ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
+ ../threads/pcb.h ../userprog/noff.h ../threads/synch.h
 exception.o: ../userprog/exception.cc /usr/include/stdc-predef.h \
  ../lib/copyright.h ../threads/main.h ../lib/debug.h ../lib/utility.h \
  ../lib/sysdep.h /usr/include/c++/12/iostream \
@@ -4286,19 +4143,12 @@ exception.o: ../userprog/exception.cc /usr/include/stdc-predef.h \
  ../threads/thread.h ../machine/machine.h ../machine/translate.h \
  ../userprog/addrspace.h ../filesys/filesys.h ../filesys/openfile.h \
  ../filesys/filetable.h ../threads/scheduler.h ../lib/list.h \
- ../lib/list.cc /usr/include/c++/12/queue /usr/include/c++/12/deque \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/callback.h ../machine/stats.h ../threads/alarm.h \
- ../machine/timer.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
- ../threads/ptable.h ../threads/pcb.h ../userprog/syscall.h \
- ../userprog/errno.h ../userprog/ksyscall.h ../userprog/synchconsole.h \
- ../machine/console.h ../threads/synch.h ../userprog/ksyscallhelper.h
+ ../lib/list.cc ../machine/interrupt.h ../machine/callback.h \
+ ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
+ ../threads/pcb.h ../userprog/syscall.h ../userprog/errno.h \
+ ../userprog/ksyscall.h ../userprog/synchconsole.h ../machine/console.h \
+ ../threads/synch.h ../userprog/ksyscallhelper.h
 synchconsole.o: ../userprog/synchconsole.cc /usr/include/stdc-predef.h \
  ../lib/copyright.h ../userprog/synchconsole.h ../lib/utility.h \
  ../machine/callback.h ../machine/console.h ../threads/synch.h \
@@ -4454,15 +4304,8 @@ synchconsole.o: ../userprog/synchconsole.cc /usr/include/stdc-predef.h \
  ../machine/translate.h ../userprog/addrspace.h ../filesys/filesys.h \
  ../filesys/openfile.h ../filesys/filetable.h ../lib/list.h \
  ../lib/debug.h ../lib/list.cc ../threads/main.h ../threads/kernel.h \
- ../threads/scheduler.h /usr/include/c++/12/queue \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../threads/scheduler.h ../machine/interrupt.h ../machine/stats.h \
+ ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
  ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
  ../threads/pcb.h
 directory.o: ../filesys/directory.cc /usr/include/stdc-predef.h \
@@ -4775,17 +4618,9 @@ filehdr.o: ../filesys/filehdr.cc /usr/include/stdc-predef.h \
  ../machine/machine.h ../machine/translate.h ../userprog/addrspace.h \
  ../filesys/filesys.h ../filesys/filetable.h ../lib/list.h ../lib/list.cc \
  ../threads/main.h ../threads/kernel.h ../threads/scheduler.h \
- /usr/include/c++/12/queue /usr/include/c++/12/deque \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/stats.h ../threads/alarm.h ../machine/timer.h \
- ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
- ../threads/pcb.h
+ ../machine/interrupt.h ../machine/stats.h ../threads/alarm.h \
+ ../machine/timer.h ../threads/stable.h ../threads/sem.h \
+ ../threads/ptable.h ../threads/pcb.h
 filesys.o: ../filesys/filesys.cc /usr/include/stdc-predef.h \
  ../lib/copyright.h ../lib/sysdep.h /usr/include/c++/12/iostream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
@@ -4940,17 +4775,10 @@ filesys.o: ../filesys/filesys.cc /usr/include/stdc-predef.h \
  ../threads/kernel.h ../lib/debug.h ../threads/thread.h \
  ../machine/machine.h ../machine/translate.h ../userprog/addrspace.h \
  ../threads/scheduler.h ../lib/list.h ../lib/list.cc \
- /usr/include/c++/12/queue /usr/include/c++/12/deque \
- /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/callback.h ../machine/stats.h ../threads/alarm.h \
- ../machine/timer.h ../lib/bitmap.h ../threads/stable.h ../threads/sem.h \
- ../threads/ptable.h ../threads/pcb.h ../threads/main.h
+ ../machine/interrupt.h ../machine/callback.h ../machine/stats.h \
+ ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
+ ../threads/pcb.h ../threads/main.h
 pbitmap.o: ../filesys/pbitmap.cc /usr/include/stdc-predef.h \
  ../lib/copyright.h ../filesys/pbitmap.h ../lib/bitmap.h ../lib/utility.h \
  ../filesys/openfile.h ../lib/sysdep.h /usr/include/c++/12/iostream \
@@ -5258,15 +5086,8 @@ synchdisk.o: ../filesys/synchdisk.cc /usr/include/stdc-predef.h \
  ../machine/translate.h ../userprog/addrspace.h ../filesys/filesys.h \
  ../filesys/openfile.h ../filesys/filetable.h ../lib/list.h \
  ../lib/debug.h ../lib/list.cc ../threads/main.h ../threads/kernel.h \
- ../threads/scheduler.h /usr/include/c++/12/queue \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
- ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
+ ../threads/scheduler.h ../machine/interrupt.h ../machine/stats.h \
+ ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
  ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
  ../threads/pcb.h
 post.o: ../network/post.cc /usr/include/stdc-predef.h ../lib/copyright.h \
@@ -5424,14 +5245,7 @@ post.o: ../network/post.cc /usr/include/stdc-predef.h ../lib/copyright.h \
  ../threads/synch.h ../threads/thread.h ../machine/machine.h \
  ../machine/translate.h ../userprog/addrspace.h ../filesys/filesys.h \
  ../filesys/openfile.h ../filesys/filetable.h ../threads/main.h \
- ../threads/kernel.h ../threads/scheduler.h /usr/include/c++/12/queue \
- /usr/include/c++/12/deque /usr/include/c++/12/bits/stl_uninitialized.h \
- /usr/include/c++/12/bits/stl_deque.h /usr/include/c++/12/bits/deque.tcc \
- /usr/include/c++/12/vector /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/stl_queue.h \
- /usr/include/c++/12/bits/uses_allocator.h ../machine/interrupt.h \
+ ../threads/kernel.h ../threads/scheduler.h ../machine/interrupt.h \
  ../machine/stats.h ../threads/alarm.h ../machine/timer.h ../lib/bitmap.h \
  ../threads/stable.h ../threads/sem.h ../threads/ptable.h \
  ../threads/pcb.h ../threads/synchlist.cc

@@ -8,4 +8,5 @@ int main() {
     PrintString("enter the String:\n");
     ReadString(buffer, length);
     PrintStringUC(buffer);
+    PrintString("\n");
 }

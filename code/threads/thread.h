@@ -110,6 +110,8 @@ class Thread {
     char *getName() { return (name); }
     void Print() { cout << name; }
     void SelfTest();  // test whether thread impl is working
+    void setTicksUntilWakeup(int ticks) { ticksUntilWakeup = ticks; }
+    int getTicksUntilWakeup() { return ticksUntilWakeup; }
 
    private:
     // some of the private data for this class is listed above
@@ -119,6 +121,7 @@ class Thread {
                           // (If NULL, don't deallocate stack)
     ThreadStatus status;  // ready, running or blocked
     char *name;
+    int ticksUntilWakeup;
 
     void StackAllocate(VoidFunctionPtr func, void *arg);
     // Allocate a stack for thread.

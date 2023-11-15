@@ -224,6 +224,16 @@ void handle_SC_PrintStringUC() {
     return move_program_counter();
 }
 
+void handle_SC_ThreadSleep() {
+    int ticks = kernel->machine->ReadRegister(4);
+    IntStatus oldLevel = kernel->interrupt->SetLevel(IntOff);
+    Thread* oldThread = kernel->currentThread;
+    kernel->scheduler->Sleep(oldThread, ticks);
+    kernel->scheduler->Run(kernel->scheduler->FindNextToRun(), false);
+    (void)kernel->interrupt->SetLevel(oldLevel);
+    return move_program_counter();
+}
+
 void handle_SC_CreateFile() {
     int virtAddr = kernel->machine->ReadRegister(4);
     char* fileName = stringUser2System(virtAddr);
@@ -479,6 +489,8 @@ void ExceptionHandler(ExceptionType which) {
                     return handle_SC_GetPid();
                 case SC_PrintStringUC:
                     return handle_SC_PrintStringUC();
+                case SC_ThreadSleep:
+                    return handle_SC_ThreadSleep();
                 /**
                  * Handle all not implemented syscalls
                  * If you want to write a new handler for syscall:
