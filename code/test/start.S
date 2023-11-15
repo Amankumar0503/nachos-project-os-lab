@@ -290,6 +290,14 @@ ThreadSleep:
 	j	$31
 	.end ThreadSleep
 
+.globl ImmdWakeUp
+	.ent	ImmdWakeUp
+ImmdWakeUp:
+	addiu $2,$0,SC_ImmdWakeUp
+	syscall
+	j	$31
+	.end ImmdWakeUp
+
 /* dummy function to keep gcc happy */
         .globl  __main
         .ent    __main

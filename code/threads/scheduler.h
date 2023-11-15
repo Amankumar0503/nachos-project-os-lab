@@ -33,6 +33,7 @@ class Scheduler {
     void Print();               // Print contents of ready list
     void Sleep(Thread* thread, int ticks);
     void WakeUp();
+    int ImmdWakeUp(int pid);
     // SelfTest for scheduler is implemented in class Thread
 
    private:

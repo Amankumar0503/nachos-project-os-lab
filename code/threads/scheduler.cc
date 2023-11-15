@@ -197,3 +197,23 @@ void Scheduler::WakeUp() {
     }
     delete iter;
 }
+int Scheduler::ImmdWakeUp(int pid){
+    ASSERT(kernel->interrupt->getLevel() == IntOff);
+    DEBUG(dbgThread, "Waking up threads" << pid );
+    ListIterator<Thread *> *iter = new ListIterator<Thread *>(sleepList);
+    bool Done = false;
+    for (; !iter->IsDone(); iter->Next()) {
+        Thread *thread = iter->Item();
+        if (thread->processID== pid) {
+            sleepList->Remove(thread);
+            thread->setStatus(READY);
+            Done  = true;
+            if (!readyList->IsInList(thread)) readyList->Append(thread);
+        } else {
+            Done  = false;// the given process is not in sleep
+        }
+    }
+    delete iter;
+    if(Done)return 0;
+    else return -1;
+}
