@@ -43,6 +43,7 @@
 
 #include "machine.h"
 #include "addrspace.h"
+#include "noff.h"
 
 // CPU register state to be saved on context switch.
 // The x86 needs to save only a few registers,
@@ -112,6 +113,8 @@ class Thread {
     void SelfTest();  // test whether thread impl is working
     void setTicksUntilWakeup(int ticks) { ticksUntilWakeup = ticks; }
     int getTicksUntilWakeup() { return ticksUntilWakeup; }
+    OpenFile *executable;
+    NoffHeader noffH;
 
    private:
     // some of the private data for this class is listed above

@@ -89,6 +89,7 @@ AddrSpace::~AddrSpace() {
         kernel->gPhysPageBitMap->Clear(pageTable[i].physicalPage);
     }
     delete[] pageTable;
+    delete kernel->currentThread->executable;
 }
 
 //----------------------------------------------------------------------
@@ -121,6 +122,8 @@ AddrSpace::AddrSpace(char *fileName) {
         (WordToHost(noffH.noffMagic) == NOFFMAGIC))
         SwapHeader(&noffH);
     ASSERT(noffH.noffMagic == NOFFMAGIC);
+    kernel->currentThread->executable = executable;
+    kernel->currentThread->noffH = noffH;
     kernel->addrLock->P();
     // how big is address space?
     size = noffH.code.size + noffH.initData.size + noffH.uninitData.size +
@@ -148,39 +151,39 @@ AddrSpace::AddrSpace(char *fileName) {
     pageTable = new TranslationEntry[numPages];
     for (i = 0; i < numPages; i++) {
         pageTable[i].virtualPage = i;  // for now, virtual page # = phys page #
-        pageTable[i].physicalPage = kernel->gPhysPageBitMap->FindAndSet();
+        //pageTable[i].physicalPage = kernel->gPhysPageBitMap->FindAndSet();
         // cerr << pageTable[i].physicalPage << endl;
-        pageTable[i].valid = TRUE;
+        pageTable[i].valid = FALSE;
         pageTable[i].use = FALSE;
         pageTable[i].dirty = FALSE;
         pageTable[i].readOnly = FALSE;  // if the code segment was entirely on
         // a separate page, we could set its
         // pages to be read-only
         // xóa các trang này trên memory
-        bzero(&(kernel->machine
-                    ->mainMemory[pageTable[i].physicalPage * PageSize]),
-              PageSize);
-        DEBUG(dbgAddr, "phyPage " << pageTable[i].physicalPage);
+        // bzero(&(kernel->machine
+        //             ->mainMemory[pageTable[i].physicalPage * PageSize]),
+        //       PageSize);
+        // DEBUG(dbgAddr, "phyPage " << pageTable[i].physicalPage);
     }
 
-    if (noffH.code.size > 0) {
-        for (i = 0; i < numPages; i++)
-            executable->ReadAt(
-                &(kernel->machine->mainMemory[noffH.code.virtualAddr]) +
-                    (pageTable[i].physicalPage * PageSize),
-                PageSize, noffH.code.inFileAddr + (i * PageSize));
-    }
+    // if (noffH.code.size > 0) {
+    //     for (i = 0; i < numPages; i++)
+    //         executable->ReadAt(
+    //             &(kernel->machine->mainMemory[noffH.code.virtualAddr]) +
+    //                 (pageTable[i].physicalPage * PageSize),
+    //             PageSize, noffH.code.inFileAddr + (i * PageSize));
+    // }
 
-    if (noffH.initData.size > 0) {
-        for (i = 0; i < numPages; i++)
-            executable->ReadAt(
-                &(kernel->machine->mainMemory[noffH.initData.virtualAddr]) +
-                    (pageTable[i].physicalPage * PageSize),
-                PageSize, noffH.initData.inFileAddr + (i * PageSize));
-    }
+    // if (noffH.initData.size > 0) {
+    //     for (i = 0; i < numPages; i++)
+    //         executable->ReadAt(
+    //             &(kernel->machine->mainMemory[noffH.initData.virtualAddr]) +
+    //                 (pageTable[i].physicalPage * PageSize),
+    //             PageSize, noffH.initData.inFileAddr + (i * PageSize));
+    // }
 
     kernel->addrLock->V();
-    delete executable;
+    //delete executable;
     return;
 }
 
